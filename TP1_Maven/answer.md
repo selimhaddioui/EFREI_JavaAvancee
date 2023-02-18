@@ -1,5 +1,5 @@
 
-# Maven  
+# Discovering Maven  
 
 ## First part  
 
@@ -11,7 +11,7 @@
 
   We can found #TODO and #TODO it might be used for #TODO  
 
-* What is ```xml<localRepository>``` tag used for in *settings.xml* file?  
+* What is `<localRepository>` tag used for in *settings.xml* file?  
 
   This is use to #TODO  
 
