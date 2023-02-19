@@ -43,9 +43,9 @@
 
 * Create a repository, launch **command prompt** from it and write below command.  
 
-  ```sh
-mvn archetype:generate -B -DarchetypeArtifactId=maven-archetype-quickstart -DgroupId=fr.efrei.mavenapps -DartifactId=MyApp -Dversion=1.0-SNAPSHOT -DpackageName=fr.efrei.mavenapps
-```  
+  ```sh  
+  mvn archetype:generate -B -DarchetypeArtifactId=maven-archetype-quickstart -DgroupId=fr.efrei.mavenapps -DartifactId=MyApp -Dversion=1.0-SNAPSHOT -DpackageName=fr.efrei.mavenapps
+  ```  
 
  Output :  
 
@@ -141,9 +141,9 @@ mvn archetype:generate -B -DarchetypeArtifactId=maven-archetype-quickstart -Dgro
 
 * Write below command in **command prompt**.  
 
-  ```sh
-java -cp target/myApp-1.0-SNAPSHOT.jar fr.efrei.mavenapps.App
-```  
+  ```sh  
+  java -cp target/myApp-1.0-SNAPSHOT.jar fr.efrei.mavenapps.App
+  ```  
 
     Output :  
 
