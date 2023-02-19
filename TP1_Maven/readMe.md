@@ -65,40 +65,39 @@
   ```sh  
   mvn archetype:generate -B -DarchetypeArtifactId=maven-archetype-quickstart -DgroupId=fr.efrei.mavenapps -DartifactId=MyApp -Dversion=1.0-SNAPSHOT -DpackageName=fr.efrei.mavenapps
   ```  
+  Output :  
 
- Output :  
+   > [INFO] Scanning for projects...  
+  [INFO]  
+  [INFO] ------------------< org.apache.maven:standalone-pom >-------------------  
+  [INFO] Building Maven Stub Project (No POM) 1  
+  [INFO] --------------------------------[ pom ]---------------------------------  
+  [INFO]  
+  [INFO] >>> maven-archetype-plugin:3.2.1:generate (default-cli) > generate-sources @ standalone-pom >>>  
+  [INFO]  
+  [INFO] <<< maven-archetype-plugin:3.2.1:generate (default-cli) < generate-sources @ standalone-pom <<<  
+  [INFO]  
+  [INFO]  
+  [INFO] --- maven-archetype-plugin:3.2.1:generate (default-cli) @ standalone-pom ---  
+  [INFO] Generating project in Batch mode  
+  [INFO] ----------------------------------------------------------------------------  
+  [INFO] Using following parameters for creating project from Old (1.x) Archetype: maven-archetype-quickstart:1.0  
+  [INFO] ----------------------------------------------------------------------------  
+  [INFO] Parameter: basedir, Value: C:\Users\%USER%\source\repos\Java\TP1_Maven  
+  [INFO] Parameter: package, Value: fr.efrei.mavenapps  
+  [INFO] Parameter: groupId, Value: fr.efrei.mavenapps  
+  [INFO] Parameter: artifactId, Value: MyApp  
+  [INFO] Parameter: packageName, Value: fr.efrei.mavenapps  
+  [INFO] Parameter: version, Value: 1.0-SNAPSHOT  
+  [INFO] project created from Old (1.x) Archetype in dir: C:\Users\%USER%\source\repos\Java\TP1_Maven\MyApp  
+  [INFO] ------------------------------------------------------------------------  
+  [INFO] BUILD SUCCESS  
+  [INFO] ------------------------------------------------------------------------  
+  [INFO] Total time:  2.935 s  
+  [INFO] Finished at: 2023-02-19T16:39:12+01:00  
+  [INFO] ------------------------------------------------------------------------  
 
- > [INFO] Scanning for projects...  
-[INFO]  
-[INFO] ------------------< org.apache.maven:standalone-pom >-------------------  
-[INFO] Building Maven Stub Project (No POM) 1  
-[INFO] --------------------------------[ pom ]---------------------------------  
-[INFO]  
-[INFO] >>> maven-archetype-plugin:3.2.1:generate (default-cli) > generate-sources @ standalone-pom >>>  
-[INFO]  
-[INFO] <<< maven-archetype-plugin:3.2.1:generate (default-cli) < generate-sources @ standalone-pom <<<  
-[INFO]  
-[INFO]  
-[INFO] --- maven-archetype-plugin:3.2.1:generate (default-cli) @ standalone-pom ---  
-[INFO] Generating project in Batch mode  
-[INFO] ----------------------------------------------------------------------------  
-[INFO] Using following parameters for creating project from Old (1.x) Archetype: maven-archetype-quickstart:1.0  
-[INFO] ----------------------------------------------------------------------------  
-[INFO] Parameter: basedir, Value: C:\Users\%USER%\source\repos\Java\TP1_Maven  
-[INFO] Parameter: package, Value: fr.efrei.mavenapps  
-[INFO] Parameter: groupId, Value: fr.efrei.mavenapps  
-[INFO] Parameter: artifactId, Value: MyApp  
-[INFO] Parameter: packageName, Value: fr.efrei.mavenapps  
-[INFO] Parameter: version, Value: 1.0-SNAPSHOT  
-[INFO] project created from Old (1.x) Archetype in dir: C:\Users\%USER%\source\repos\Java\TP1_Maven\MyApp  
-[INFO] ------------------------------------------------------------------------  
-[INFO] BUILD SUCCESS  
-[INFO] ------------------------------------------------------------------------  
-[INFO] Total time:  2.935 s  
-[INFO] Finished at: 2023-02-19T16:39:12+01:00  
-[INFO] ------------------------------------------------------------------------  
-
-  Maven has created a project using *quickstart template*, domain name called here *groupeId*, project name called here *artifactId*, *packageName* and *version* number. Basically there is now a repository *myApp* in the repository we previously created.
+  Maven has created a project using *quickstart template*, domain name called here *groupeId*, project name called here *artifactId*, *packageName* and *version* number. Basically there is now a repository *myApp* in the repository we previously created. See [commit](https://github.com/selimhaddioui/EFREI_JavaAvancee/commit/7c2bfec9eafefd120a1251ee2bce86982e624546).
 
   * What king of files are download and where are they stored ?  
 
