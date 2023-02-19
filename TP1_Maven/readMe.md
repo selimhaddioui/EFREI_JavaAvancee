@@ -217,7 +217,7 @@
 
   `MyApp\target\classes\${groupId}\App.class` and `MyApp\target\maven-status\maven-compiler-plugin\compile\default-compile\(created|input)Files.lst` have been created. *createdFiles.lst* contain the list of all created files from the compilation in string format, and *inputFiles.lst* contain the list of all files that have been compiled. *App.class* is the result of the compilation of *App.java*. See [commit](https://github.com/selimhaddioui/EFREI_JavaAvancee/commit/91960bf8ad7b00c279f67197f406bb9de2326a78).  
 
-* Download then add following section to configure compilator with right version.  
+* Add following section to *pom.xml* to configure compilator with right version.  
 
   ```xml  
   <build>
@@ -235,16 +235,39 @@
   </build>
   ```
 
+  See [commit]().
+
 * Again, write `mvn compile`.  
 
   Output :  
-  > Here is the output.  
+  > [INFO] Scanning for projects...  
+    [INFO]  
+    [INFO] ----------------------< fr.efrei.mavenapps:MyApp >----------------------  
+    [INFO] Building MyApp 1.0-SNAPSHOT  
+    [INFO] --------------------------------[ jar ]---------------------------------  
+    Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.3.2/maven-compiler-plugin-2.3.2.pom  
+    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.3.2/maven-compiler-plugin-2.3.2.pom (7.3 kB at 18 kB/s)  
+    Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.3.2/maven-compiler-plugin-2.3.2.jar  
+    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.3.2/maven-compiler-plugin-2.3.2.jar (29 kB at 360 kB/s)  
+    [INFO]  
+    [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ MyApp ---  
+    [WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!  
+    [INFO] skip non existing resourceDirectory C:\Users\selim\source\repos\Java   Avanc�\TP1_Maven\MyApp\src\main\resources  
+    [INFO]  
+    [INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ MyApp ---  
+    [INFO] Nothing to compile - all classes are up to date  
+    [INFO] ------------------------------------------------------------------------  
+    [INFO] BUILD SUCCESS  
+    [INFO] ------------------------------------------------------------------------  
+    [INFO] Total time:  2.257 s  
+    [INFO] Finished at: 2023-02-19T21:07:06+01:00  
+    [INFO] ------------------------------------------------------------------------   
 
-  It did this #TODO.  
+  We can see that it download from maven online repository the compilator plugin that we just add to *pom.xml*. We also see that compiling did nothing because all classes were up to date even if it was using the new compilator.
 
 * Analyze *myApp/Target* repository that has been created.  
 
-  We might see #TODO.  
+  Already done after explaining what the first `mvn compile` has done but to put it in a nutshell *target* repository contain all file created by Maven.  
 
 * Write `mvn test` in **command prompt**.  
 
