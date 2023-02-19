@@ -15,7 +15,7 @@
 
   *conf* repository contain *settings.xml*, *toolchains.xml* and *simplelogger.properties* which are three files that allow to edit default configuration such as path of the local repository, mirror repository, and a lot of others configs.  
 
-* <a name="localRepository"></a> What is `localRepository` tag used for in *settings.xml* file ?  
+* What is `localRepository` tag used for in *settings.xml* file ?  
 
   As comments in *settings.xml* file say :  
 
@@ -43,9 +43,9 @@
 
 * Create a repository, launch **command prompt** from it and write below command.  
 
-  ```sh  
-  mvn archetype:generate -B -DarchetypeArtifactId=maven-archetype-quickstart -DgroupId=fr.efrei.mavenapps -DartifactId=MyApp -Dversion=1.0-SNAPSHOT -DpackageName=fr.efrei.mavenapps
-  ```  
+  ```sh
+mvn archetype:generate -B -DarchetypeArtifactId=maven-archetype-quickstart -DgroupId=fr.efrei.mavenapps -DartifactId=MyApp -Dversion=1.0-SNAPSHOT -DpackageName=fr.efrei.mavenapps
+```  
 
  Output :  
 
@@ -59,7 +59,7 @@
 
 * Analyze *.m2* repository created by Maven at `C:\Users\%USERNAME%\`.  
 
-  This repository is our local repository mentioned in [first part](#localRepository). It store all dependances we download.  
+  This repository is our local repository mentioned in first part. It store all dependances we download.  
 
 * Analyze *mavenapps* repository.  
 
@@ -141,9 +141,9 @@
 
 * Write below command in **command prompt**.  
 
-    ```sh  
-    java -cp target/myApp-1.0-SNAPSHOT.jar fr.efrei.mavenapps.App
-    ```  
+  ```sh
+java -cp target/myApp-1.0-SNAPSHOT.jar fr.efrei.mavenapps.App
+```  
 
     Output :  
 
