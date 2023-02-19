@@ -97,7 +97,7 @@
   [INFO] Finished at: 2023-02-19T16:39:12+01:00  
   [INFO] ------------------------------------------------------------------------  
 
-  Maven has created a project using *quickstart template*, domain name called here *groupId*, project name called here *artifactId*, *packageName* and *version* number. Basically there is now a repository *myApp* in the repository we previously created. See [commit](https://github.com/%USERNAME%haddioui/EFREI_JavaAvancee/commit/7c2bfec9eafefd120a1251ee2bce86982e624546).
+  Maven has created a project using *quickstart template*, domain name called here *groupId*, project name called here *artifactId*, *packageName* and *version* number. Basically there is now a repository *myApp* in the repository we previously created. See [commit](https://github.com/selimhaddioui/EFREI_JavaAvancee/commit/7c2bfec9eafefd120a1251ee2bce86982e624546).
 
   * What kind of files are download and where are they saved ?  
 
@@ -215,7 +215,7 @@
     [INFO] Finished at: 2023-02-19T19:10:40+01:00  
     [INFO] ------------------------------------------------------------------------  
 
-  `MyApp\target\classes\${groupId}\App.class` and `MyApp\target\maven-status\maven-compiler-plugin\compile\default-compile\(created|input)Files.lst` have been created. *createdFiles.lst* contain the list of all created files from the compilation in string format, and inputFiles.lst contain the list of all files that have been compiled. *App.class* is the result of the compilation of *App.java*. See [commit]().  
+  `MyApp\target\classes\${groupId}\App.class` and `MyApp\target\maven-status\maven-compiler-plugin\compile\default-compile\(created|input)Files.lst` have been created. *createdFiles.lst* contain the list of all created files from the compilation in string format, and inputFiles.lst contain the list of all files that have been compiled. *App.class* is the result of the compilation of *App.java*. See [commit](https://github.com/selimhaddioui/EFREI_JavaAvancee/commit/91960bf8ad7b00c279f67197f406bb9de2326a78).  
 
 * Download then add following section to configure compilator with right version.  
 
