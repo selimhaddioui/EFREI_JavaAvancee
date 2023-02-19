@@ -21,7 +21,7 @@
 
   > The path to the local repository maven will use to store artifacts.  
 
-  In other words, by using it we can change local repository from .m2 to anything we want so all dependance we download will be where we want it to be.  
+  In other words, by using it we can change local repository from .m2 to anything we want so all dependencies we download will be where we want it to be.  
 
 * Write on **command prompt** `mvn -v`.  
 
@@ -83,13 +83,13 @@
   [INFO] ----------------------------------------------------------------------------  
   [INFO] Using following parameters for creating project from Old (1.x) Archetype: maven-archetype-quickstart:1.0  
   [INFO] ----------------------------------------------------------------------------  
-  [INFO] Parameter: basedir, Value: C:\Users\%USER%\source\repos\Java\TP1_Maven  
+  [INFO] Parameter: basedir, Value: C:\Users\\%USERNAME%\source\repos\Java\TP1_Maven  
   [INFO] Parameter: package, Value: fr.efrei.mavenapps  
   [INFO] Parameter: groupId, Value: fr.efrei.mavenapps  
   [INFO] Parameter: artifactId, Value: MyApp  
   [INFO] Parameter: packageName, Value: fr.efrei.mavenapps  
   [INFO] Parameter: version, Value: 1.0-SNAPSHOT  
-  [INFO] project created from Old (1.x) Archetype in dir: C:\Users\%USER%\source\repos\Java\TP1_Maven\MyApp  
+  [INFO] project created from Old (1.x) Archetype in dir: C:\Users\\%USERNAME%\source\repos\Java\TP1_Maven\MyApp  
   [INFO] ------------------------------------------------------------------------  
   [INFO] BUILD SUCCESS  
   [INFO] ------------------------------------------------------------------------  
@@ -97,45 +97,125 @@
   [INFO] Finished at: 2023-02-19T16:39:12+01:00  
   [INFO] ------------------------------------------------------------------------  
 
-  Maven has created a project using *quickstart template*, domain name called here *groupeId*, project name called here *artifactId*, *packageName* and *version* number. Basically there is now a repository *myApp* in the repository we previously created. See [commit](https://github.com/selimhaddioui/EFREI_JavaAvancee/commit/7c2bfec9eafefd120a1251ee2bce86982e624546).
+  Maven has created a project using *quickstart template*, domain name called here *groupId*, project name called here *artifactId*, *packageName* and *version* number. Basically there is now a repository *myApp* in the repository we previously created. See [commit](https://github.com/%USERNAME%haddioui/EFREI_JavaAvancee/commit/7c2bfec9eafefd120a1251ee2bce86982e624546).
 
-  * What king of files are download and where are they stored ?  
+  * What kind of files are download and where are they saved ?  
 
-    #TODO files are download and they are stored #TODO  
+    *pom.xml*, *App.java*, *AppTest.java* are all files that have been created. *pom.xml* contain the project object model that describe our project and *.java* files contain our code and tests. *pom.xml* is saved in the main repository called with the *artifactId* here *MyApp*. *.java* file are saved in subrepository that respect *groupId* pattern. So they are in  `MyApp\src\(main|test)\java\fr\efrei\mavenapps\`.  
 
 * Analyze *.m2* repository created by Maven at `C:\Users\%USERNAME%\`.  
 
-  This repository is our local repository mentioned in first part. It store all dependances we download.  
+  This repository is our local repository mentioned in first part. It contains all dependencies and artifacts we download.  
 
-* Analyze *mavenapps* repository.  
+* Analyze *mavenapps* sub-repository.  
 
-  This repository is about #TODO.  
+  There is no sub-repository named *mavenapps* in *.m2* repository but we can found two of them at the end of both of our path created in *MyApp* repository. Both contain *.java* file, one is about our source code, the other about testing our source code.  
 
 * Edit *App.java* and observe it.  
 
-  Don't know what #TODO there.  
+  ```java  
+  package fr.efrei.mavenapps;  
+
+  /**
+  * Hello world, this is Minh-Tri!
+  *
+  */
+  public class App
+  {
+    public static void main( String[] args )
+    {
+      int age = 20;
+      System.out.println( "Hello World, this is Minh-Tri!" );
+      System.out.println( "I am " + age + " years old!" );
+    }
+  }
+  ```
+  Only thing that we can say is that this is a Java program.
 
 * Edit *TestApp.java* and observe it.
 
-  Still don't know what #TODO.  
+  ```java  
+  package fr.efrei.mavenapps;  
 
-* Analyze *pom.xml*
+  import junit.framework.Test;  
+  import junit.framework.TestCase;  
+  import junit.framework.TestSuite;  
+
+  /**  
+   * Unit test for simple App.  
+   */  
+  public class AppTest  
+      extends TestCase  
+  {  
+      /**  
+       * Create the test case  
+       *  
+       * @param testName name of the test case  
+       */  
+      public AppTest( String testName )  
+      {  
+          super( testName );  
+      }  
+
+      /**  
+       * @return the suite of tests being tested  
+       */  
+      public static Test suite()  
+      {  
+          return new TestSuite( AppTest.class );  
+      }  
+
+      /**  
+       * Rigourous Test :-)  
+       */  
+      public void testApp()  
+      {  
+          int minhTriAge = 20;  
+          boolean isMinor = minhTriAge < 18;  
+          assertFalse(isMinor);  
+      }  
+  }   
+  ```  
+  Only thing we can say is that this is a Java program that contain a test class.
+
+* Analyze *pom.xml*  
+
+  As we say before, *pom.xml* describe through different tags what is the project about and how do we work with it (build, compile, test, execution, ...). We can found in it the arguments that we gave to maven to build it.  
 
   * What is `scope` tag for in JUnit dependance ?  
 
-    `scope` tag in JUnit is for #TODO.  
+    `scope` tag in JUnit is to know where JUnit dependance will be used, in our case it is in test class path.  
 
   * What others tags can we found in *pom.xml* file ?  
 
-    We can found `#todo`, `#todo` and `#todo` tags in *pom.xml* file that are used for.  
+    We can also found `version`, `artifactId` and `groupId` tags in *pom.xml* which are arguments that we gave to maven to build the project.
 
 * Using **command prompt** from *myApp* repository write `mvn compile`.  
 
   Output :  
 
-  > Here is the output  
+  > [INFO] Scanning for projects...  
+    [INFO]  
+    [INFO] ----------------------< fr.efrei.mavenapps:MyApp >----------------------  
+    [INFO] Building MyApp 1.0-SNAPSHOT  
+    [INFO] --------------------------------[ jar ]---------------------------------  
+    [INFO]  
+    [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ MyApp ---  
+    [WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!  
+    [INFO] skip non existing resourceDirectory C:\Users\\%USERNAME%\source\repos\Java\TP1_Maven\MyApp\src\main\resources  
+    [INFO]  
+    [INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ MyApp ---  
+    [INFO] Changes detected - recompiling the module!  
+    [WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!  
+    [INFO] Compiling 1 source file to C:\Users\\%USERNAME%\source\repos\Java\TP1_Maven\MyApp\target\classes  
+    [INFO] ------------------------------------------------------------------------  
+    [INFO] BUILD SUCCESS  
+    [INFO] ------------------------------------------------------------------------  
+    [INFO] Total time:  1.605 s  
+    [INFO] Finished at: 2023-02-19T19:10:40+01:00  
+    [INFO] ------------------------------------------------------------------------  
 
-  #TODO happened.  
+  `MyApp\target\classes\${groupId}\App.class` and `MyApp\target\maven-status\maven-compiler-plugin\compile\default-compile\(created|input)Files.lst` have been created. *createdFiles.lst* contain the list of all created files from the compilation in string format, and inputFiles.lst contain the list of all files that have been compiled. *App.class* is the result of the compilation of *App.java*. See [commit]().  
 
 * Download then add following section to configure compilator with right version.  
 
@@ -207,7 +287,7 @@
 
 * What is a local repository ?  
 
-  A local repository store all dependances that has been download and needed for the user in his projects. It can be dependances that was made by the user or someone else.  
+  A local repository contains all dependencies and artifacts that has been download and needed for the user in his projects. It can be dependencies that was made by the user or someone else.  
 
 * Where is the default local repository ?  
 

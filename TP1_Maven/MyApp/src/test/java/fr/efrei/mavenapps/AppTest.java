@@ -33,6 +33,8 @@ public class AppTest
      */
     public void testApp()
     {
-        assertTrue( true );
+		int minhTriAge = 20;
+          boolean isMinor = minhTriAge < 18;
+          assertFalse(isMinor);
     }
 }
