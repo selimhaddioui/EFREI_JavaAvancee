@@ -83,13 +83,13 @@
   [INFO] ----------------------------------------------------------------------------  
   [INFO] Using following parameters for creating project from Old (1.x) Archetype: maven-archetype-quickstart:1.0  
   [INFO] ----------------------------------------------------------------------------  
-  [INFO] Parameter: basedir, Value: C:\Users\\%USERNAME%\source\repos\Java\TP1_Maven  
+  [INFO] Parameter: basedir, Value: C:\Users\\%USERNAME%\source\repos\JavaAv\TP1_Maven  
   [INFO] Parameter: package, Value: fr.efrei.mavenapps  
   [INFO] Parameter: groupId, Value: fr.efrei.mavenapps  
   [INFO] Parameter: artifactId, Value: MyApp  
   [INFO] Parameter: packageName, Value: fr.efrei.mavenapps  
   [INFO] Parameter: version, Value: 1.0-SNAPSHOT  
-  [INFO] project created from Old (1.x) Archetype in dir: C:\Users\\%USERNAME%\source\repos\Java\TP1_Maven\MyApp  
+  [INFO] project created from Old (1.x) Archetype in dir: C:\Users\\%USERNAME%\source\repos\JavaAv\TP1_Maven\MyApp  
   [INFO] ------------------------------------------------------------------------  
   [INFO] BUILD SUCCESS  
   [INFO] ------------------------------------------------------------------------  
@@ -202,12 +202,12 @@
     [INFO]  
     [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ MyApp ---  
     [WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!  
-    [INFO] skip non existing resourceDirectory C:\Users\\%USERNAME%\source\repos\Java\TP1_Maven\MyApp\src\main\resources  
+    [INFO] skip non existing resourceDirectory C:\Users\\%USERNAME%\source\repos\JavaAv\TP1_Maven\MyApp\src\main\resources  
     [INFO]  
     [INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ MyApp ---  
     [INFO] Changes detected - recompiling the module!  
     [WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!  
-    [INFO] Compiling 1 source file to C:\Users\\%USERNAME%\source\repos\Java\TP1_Maven\MyApp\target\classes  
+    [INFO] Compiling 1 source file to C:\Users\\%USERNAME%\source\repos\JavaAv\TP1_Maven\MyApp\target\classes  
     [INFO] ------------------------------------------------------------------------  
     [INFO] BUILD SUCCESS  
     [INFO] ------------------------------------------------------------------------  
@@ -227,8 +227,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>2.3.2</version>
         <configuration>
-          <source>1.12</source>
-          <target>1.12</target>
+          <source>${your_jdk_version}</source>
+          <target>${your_jdk_version}</target>
         </configuration>
       </plugin>
     </plugins>
@@ -273,7 +273,40 @@
 
   Output :  
 
-  > Here is the output.  
+  > [INFO] Scanning for projects...  
+    [INFO]  
+    [INFO] ----------------------< fr.efrei.mavenapps:MyApp >----------------------  
+    [INFO] Building MyApp 1.0-SNAPSHOT  
+    [INFO] --------------------------------[ jar ]---------------------------------  
+    [INFO]  
+    [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ MyApp ---  
+    [WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!  
+    [INFO] skip non existing resourceDirectory   C:\Users\selim\source\repos\JavaAv\TP1_Maven\MyApp\src\main\resources  
+    [INFO]  
+    [INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ MyApp ---  
+    [INFO] Nothing to compile - all classes are up to date  
+    [INFO]  
+    [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ MyApp ---  
+    [WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!  
+    [INFO] skip non existing resourceDirectory   C:\Users\selim\source\repos\JavaAv\TP1_Maven\MyApp\src\test\resources  
+    [INFO]  
+    [INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ MyApp ---  
+    [WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!  
+    [INFO] Compiling 1 source file to   C:\Users\selim\source\repos\JavaAv\TP1_Maven\MyApp\target\test-classes  
+    [INFO]  
+    [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ MyApp ---  
+    [INFO] Surefire report directory:   C:\Users\selim\source\repos\JavaAv\TP1_Maven\MyApp\target\surefire-reports  
+    T E S T S  
+    Running fr.efrei.mavenapps.AppTest  
+    Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec  
+    Results :  
+    Tests run: 1, Failures: 0, Errors: 0, Skipped: 0  
+    [INFO] ------------------------------------------------------------------------  
+    [INFO] BUILD SUCCESS  
+    [INFO] ------------------------------------------------------------------------  
+    [INFO] Total time:  1.513 s  
+    [INFO] Finished at: 2023-02-19T22:48:48+01:00  
+    [INFO] ------------------------------------------------------------------------  
 
   These happened #TODO.  
 
