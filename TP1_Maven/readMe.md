@@ -215,16 +215,29 @@
     [INFO] Finished at: 2023-02-19T19:10:40+01:00  
     [INFO] ------------------------------------------------------------------------  
 
-  `MyApp\target\classes\${groupId}\App.class` and `MyApp\target\maven-status\maven-compiler-plugin\compile\default-compile\(created|input)Files.lst` have been created. *createdFiles.lst* contain the list of all created files from the compilation in string format, and inputFiles.lst contain the list of all files that have been compiled. *App.class* is the result of the compilation of *App.java*. See [commit](https://github.com/selimhaddioui/EFREI_JavaAvancee/commit/91960bf8ad7b00c279f67197f406bb9de2326a78).  
+  `MyApp\target\classes\${groupId}\App.class` and `MyApp\target\maven-status\maven-compiler-plugin\compile\default-compile\(created|input)Files.lst` have been created. *createdFiles.lst* contain the list of all created files from the compilation in string format, and *inputFiles.lst* contain the list of all files that have been compiled. *App.class* is the result of the compilation of *App.java*. See [commit](https://github.com/selimhaddioui/EFREI_JavaAvancee/commit/91960bf8ad7b00c279f67197f406bb9de2326a78).  
 
 * Download then add following section to configure compilator with right version.  
 
-  #TODO copy and paste code from TP file there.  
+  ```xml  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.3.2</version>
+        <configuration>
+          <source>1.12</source>
+          <target>1.12</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  ```
 
 * Again, write `mvn compile`.  
 
   Output :  
-
   > Here is the output.  
 
   It did this #TODO.  
