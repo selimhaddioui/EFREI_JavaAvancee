@@ -39,7 +39,26 @@
 
 * Write on **command prompt** `mvn` without any argument. Maven will throw an error and list all available project phase. What are they ?  
 
-  They are #TODO  
+  Output :  
+
+  >[INFO] Scanning for projects...  
+  [INFO] ------------------------------------------------------------------------  
+  [INFO] BUILD FAILURE  
+  [INFO] ------------------------------------------------------------------------  
+  [INFO] Total time:  0.073 s  
+  [INFO] Finished at: 2023-02-19T16:33:13+01:00  
+  [INFO] ------------------------------------------------------------------------  
+  [ERROR] No goals have been specified for this build. You must specify a valid lifecycle phase or a goal in the format <plugin-prefix>:<goal> or <plugin-group-id>:<plugin-artifact-id>[:<plugin-version>]:<goal>. Available lifecycle phases are: validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy, pre-clean, clean, post-clean, pre-site, site, post-site, site-deploy. -> [Help 1]  
+  [ERROR]  
+  [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.  
+  [ERROR] Re-run Maven using the -X switch to enable full debug logging.  
+  [ERROR]  
+  [ERROR] For more information about the errors and possible solutions, please read the following articles:  
+  [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/NoGoalSpecifiedException.    
+
+  As **command prompt** say, available lifecycle phases are :  
+
+  > validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy, pre-clean, clean, post-clean, pre-site, site, post-site, site-deploy.  
 
 * Create a repository, launch **command prompt** from it and write below command.  
 
@@ -49,9 +68,37 @@
 
  Output :  
 
- > Here is the output  
+ > [INFO] Scanning for projects...  
+[INFO]  
+[INFO] ------------------< org.apache.maven:standalone-pom >-------------------  
+[INFO] Building Maven Stub Project (No POM) 1  
+[INFO] --------------------------------[ pom ]---------------------------------  
+[INFO]  
+[INFO] >>> maven-archetype-plugin:3.2.1:generate (default-cli) > generate-sources @ standalone-pom >>>  
+[INFO]  
+[INFO] <<< maven-archetype-plugin:3.2.1:generate (default-cli) < generate-sources @ standalone-pom <<<  
+[INFO]  
+[INFO]  
+[INFO] --- maven-archetype-plugin:3.2.1:generate (default-cli) @ standalone-pom ---  
+[INFO] Generating project in Batch mode  
+[INFO] ----------------------------------------------------------------------------  
+[INFO] Using following parameters for creating project from Old (1.x) Archetype: maven-archetype-quickstart:1.0  
+[INFO] ----------------------------------------------------------------------------  
+[INFO] Parameter: basedir, Value: C:\Users\%USER%\source\repos\Java\TP1_Maven  
+[INFO] Parameter: package, Value: fr.efrei.mavenapps  
+[INFO] Parameter: groupId, Value: fr.efrei.mavenapps  
+[INFO] Parameter: artifactId, Value: MyApp  
+[INFO] Parameter: packageName, Value: fr.efrei.mavenapps  
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT  
+[INFO] project created from Old (1.x) Archetype in dir: C:\Users\%USER%\source\repos\Java\TP1_Maven\MyApp  
+[INFO] ------------------------------------------------------------------------  
+[INFO] BUILD SUCCESS  
+[INFO] ------------------------------------------------------------------------  
+[INFO] Total time:  2.935 s  
+[INFO] Finished at: 2023-02-19T16:39:12+01:00  
+[INFO] ------------------------------------------------------------------------  
 
- Several things happen such as #TODO
+  Maven has created a project using *quickstart template*, domain name called here *groupeId*, project name called here *artifactId*, *packageName* and *version* number. Basically there is now a repository *myApp* in the repository we previously created.
 
   * What king of files are download and where are they stored ?  
 
