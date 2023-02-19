@@ -235,7 +235,7 @@
   </build>
   ```
 
-  See [commit]().
+  See [commit](https://github.com/selimhaddioui/EFREI_JavaAvancee/commit/cc23d53d112d70e67302f08e9e521e1e1d7fd4ac).
 
 * Again, write `mvn compile`.  
 
