@@ -308,15 +308,15 @@
     [INFO] Finished at: 2023-02-19T22:48:48+01:00  
     [INFO] ------------------------------------------------------------------------  
 
-  These happened #TODO.  
+  Test were ran and passed. See [commit](https://github.com/selimhaddioui/EFREI_JavaAvancee/commit/b86d3b3cbcd95132401ce5a94b479fad14e72800).  
 
   * Again, analyze *myApp/target* repository.  
 
-    We can see #TODO.  
+    We can see that `target\generated-sources\test-annotations\` and `target\surefire-reports\` repository have been created. Also `test-classes\${groupId}\AppTest.class` file contains the output compiled test class.
 
   * Analyze *myApp/target/surefire-reports* repository.  
 
-    We can see #TODO.  
+    We can see that two files `surefire-reports\${groupdId}.AppTest.txt` and `surefire-reports\TEST-${groupdId}.AppTest.xml` have been created. The first one contain the result of the test, the second one contain the configuration of the test during the run.  
 
 * Write `mvn package` in **command prompt**.  
 
