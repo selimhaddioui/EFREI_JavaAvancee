@@ -385,7 +385,45 @@
 
   Output :  
 
-  > Here is the output.  
+  > [INFO] Scanning for projects...  
+    [INFO]  
+    [INFO] ----------------------< fr.efrei.mavenapps:MyApp >----------------------  
+    [INFO] Building MyApp 1.0-SNAPSHOT  
+    [INFO] --------------------------------[ jar ]---------------------------------  
+    [INFO]  
+    [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ MyApp ---  
+    [WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!  
+    [INFO] skip non existing resourceDirectory C:\Users\selim\source\repos\JavaAv\TP1_Maven\MyApp\src\main\resources  
+    [INFO]  
+    [INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ MyApp ---  
+    [INFO] Nothing to compile - all classes are up to date   
+    [INFO]  
+    [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ MyApp ---  
+    [WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!  
+    [INFO] skip non existing resourceDirectory C:\Users\selim\source\repos\JavaAv\TP1_Maven\MyApp\src\test\resources  
+    [INFO]  
+    [INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ MyApp ---  
+    [INFO] Nothing to compile - all classes are up to date  
+    [INFO]  
+    [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ MyApp ---  
+    [INFO] Surefire report directory: C:\Users\selim\source\repos\JavaAv\TP1_Maven\MyApp\target\surefire-reports  
+     T E S T S  
+    Running fr.efrei.mavenapps.AppTest  
+    Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec  
+    Results :  
+    Tests run: 1, Failures: 0, Errors: 0, Skipped: 0  
+    [INFO]  
+    [INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ MyApp ---  
+    [INFO]  
+    [INFO] --- maven-install-plugin:2.4:install (default-install) @ MyApp ---  
+    [INFO] Installing C:\Users\selim\source\repos\JavaAv\TP1_Maven\MyApp\target\MyApp-1.0-SNAPSHOT.jar to   C:\Users\selim\.m2\repository\fr\efrei\mavenapps\MyApp\1.0-SNAPSHOT\MyApp-1.0-SNAPSHOT.jar  
+    [INFO] Installing C:\Users\selim\source\repos\JavaAv\TP1_Maven\MyApp\pom.xml to   C:\Users\selim\.m2\repository\fr\efrei\mavenapps\MyApp\1.0-SNAPSHOT\MyApp-1.0-SNAPSHOT.pom  
+    [INFO] ------------------------------------------------------------------------  
+    [INFO] BUILD SUCCESS  
+    [INFO] ------------------------------------------------------------------------  
+    [INFO] Total time:  1.513 s  
+    [INFO] Finished at: 2023-02-20T22:39:12+01:00  
+    [INFO] ------------------------------------------------------------------------  
 
   #TODO happened.  
 
