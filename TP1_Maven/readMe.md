@@ -425,15 +425,15 @@
     [INFO] Finished at: 2023-02-20T22:39:12+01:00  
     [INFO] ------------------------------------------------------------------------  
 
-  #TODO happened.  
+  Some edit in *surefire-reports* directory happened. Also a repository has been added to *.m2* local repository. It contain our project. See [commit](https://github.com/selimhaddioui/EFREI_JavaAvancee/commit/bfb835f52bc815df4772021556020630fecad441)
 
 * What is a local repository ?  
 
-  A local repository contains all dependencies and artifacts that have been download and needed for the user in his projects. It can be dependencies that was made by the user or someone else.  
+  A local repository contains all dependencies and artifacts that have been download and needed for the user in his projects. It can be dependencies that was made by the user or someone else. In the preview question we installed our program in our local repository  
 
 * Where is the default local repository ?  
 
-  The default local repository is called *.m2* and can be found at `C:\Users\%USERNAME%\`.  
+  The default local repository is called *.m2* and can be found at `C:\Users\%USERNAME%\`. Default path to local repository can be found in `localRepository` tag in `%MAVEN_HOME%\conf\settings.xml` file.
 
 * How to switch it ?  
 
@@ -441,13 +441,26 @@
 
 * Show that the jar of the app is now in the local repository and where exactly.  
 
-  When we write `mvn #todo` a repository is created at `%USER_HOME%/.m2/repository` and in our case we can see that the jar is saved in `%USER_HOME%/.m2/repository/fr/efrei/demomaven` with `%USER_HOME` the path for `C:\Users\%USERNAME`.  
+  When we write `mvn install` a repository is created at `%USER_HOME%/.m2/repository` and in our case we can see that the jar is saved in `%USER_HOME%/.m2/repository/${groupId}/MyApp/1.0-SNAPSHOT/` with `%USER_HOME` the path for `C:\Users\%USERNAME`.  
 
 * Write `mvn clean` in **command prompt**.  
 
   Output :  
 
-  > Here is the output.  
+  > [INFO] Scanning for projects...  
+    [INFO]  
+    [INFO] ----------------------< fr.efrei.mavenapps:MyApp >----------------------  
+    [INFO] Building MyApp 1.0-SNAPSHOT  
+    [INFO] --------------------------------[ jar ]---------------------------------  
+    [INFO]  
+    [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ MyApp ---  
+    [INFO] Deleting C:\Users\selim\source\repos\JavaAv\TP1_Maven\MyApp\target  
+    [INFO] ------------------------------------------------------------------------  
+    [INFO] BUILD SUCCESS  
+    [INFO] ------------------------------------------------------------------------  
+    [INFO] Total time:  0.223 s  
+    [INFO] Finished at: 2023-02-20T22:54:53+01:00  
+    [INFO] ------------------------------------------------------------------------   
 
   #TODO happened.  
 
