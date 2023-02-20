@@ -363,7 +363,7 @@
 
   * Again, analyze *myApp/target* repository.  
 
-    We can find in it #TODO.  
+    We can find in it #TODO. See [commit](https://github.com/selimhaddioui/EFREI_JavaAvancee/commit/8369ddef09cba4aa50cbf595d307b6e803b3a5ee)  
 
 * What is the relation with `mvn compile` ?  
 
