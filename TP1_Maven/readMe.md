@@ -462,7 +462,7 @@
     [INFO] Finished at: 2023-02-20T22:54:53+01:00  
     [INFO] ------------------------------------------------------------------------   
 
-  #TODO happened.  
+  *target* directory has been deleted. See [commit](https://github.com/selimhaddioui/EFREI_JavaAvancee/commit/ceca708655f517b6e641f10fd2b2dce82c212b3d).  
 
 * Write `mvn clean install` in **command prompt**.  
 
