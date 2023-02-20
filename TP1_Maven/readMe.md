@@ -97,7 +97,7 @@
   [INFO] Finished at: 2023-02-19T16:39:12+01:00  
   [INFO] ------------------------------------------------------------------------  
 
-  Maven has created a project using *quickstart template*, domain name called here *groupId*, project name called here *artifactId*, *packageName* and *version* number. Basically there is now a repository *myApp* in the repository we previously created. See [commit](https://github.com/selimhaddioui/EFREI_JavaAvancee/commit/7c2bfec9eafefd120a1251ee2bce86982e624546).
+  Maven created a project using *quickstart template*, domain name called here *groupId*, project name called here *artifactId*, *packageName* and *version* number. Basically there is now a repository *myApp* in the repository we previously created. See [commit](https://github.com/selimhaddioui/EFREI_JavaAvancee/commit/7c2bfec9eafefd120a1251ee2bce86982e624546).
 
   * What kind of files are download and where are they saved ?  
 
@@ -359,15 +359,15 @@
     [INFO] Finished at: 2023-02-20T14:20:41+01:00   
     [INFO] ------------------------------------------------------------------------      
 
-  #Todo happened.  
+  Two files have been created `TP1_Maven/MyApp/target/maven-archiver/pom.properties` and `TP1_Maven/MyApp/target/MyApp-1.0-SNAPSHOT.jar` and test reports have been edited. It look like tests have been run and reports updated. Also a *.jar* has been created.   
 
-  * Again, analyze *myApp/target* repository.  
+   * Again, analyze *myApp/target* repository.  
 
-    We can find in it #TODO. See [commit](https://github.com/selimhaddioui/EFREI_JavaAvancee/commit/8369ddef09cba4aa50cbf595d307b6e803b3a5ee)  
+    We can find in it new file and directory mentioned before. See [commit](https://github.com/selimhaddioui/EFREI_JavaAvancee/commit/8369ddef09cba4aa50cbf595d307b6e803b3a5ee)   
 
 * What is the relation with `mvn compile` ?  
 
-  The relation is about #TODO.  
+  `mvn package` seem to create a package (here a *.jar*) from compiled code (here *.class* files) and `mvn compile` generate compiled code.   
 
 * Write below command in **command prompt**.  
 
@@ -391,7 +391,7 @@
 
 * What is a local repository ?  
 
-  A local repository contains all dependencies and artifacts that has been download and needed for the user in his projects. It can be dependencies that was made by the user or someone else.  
+  A local repository contains all dependencies and artifacts that have been download and needed for the user in his projects. It can be dependencies that was made by the user or someone else.  
 
 * Where is the default local repository ?  
 
@@ -399,7 +399,7 @@
 
 * How to switch it ?  
 
-  In order to switch it we have to edit `localRepository` tag from *settings.xml* file.  
+  In order to switch it we've to edit `localRepository` tag from *settings.xml* file.  
 
 * Show that the jar of the app is now in the local repository and where exactly.  
 
