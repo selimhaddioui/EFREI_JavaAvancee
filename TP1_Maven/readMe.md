@@ -375,11 +375,11 @@
   java -cp target/myApp-1.0-SNAPSHOT.jar fr.efrei.mavenapps.App
   ```  
 
-    Output :  
+  Output :
+  > Hello World, this is Minh-Tri\!  
+  I am 20 years old!  
 
-    > Here is the output.  
-
-    #TODO happened.  
+  It seem that the source code has been executed using *.jar* file.  
 
 * Write `mvn install` in **command prompt**.
 
