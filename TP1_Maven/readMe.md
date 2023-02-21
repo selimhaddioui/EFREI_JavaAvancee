@@ -1,7 +1,16 @@
 
 # Discovering Maven  
 
----
+---   
+
+## Table of content
+
+1.  [First part](#first-part)
+2.  [Second part](#second-part)
+3.  [Third part](#third-part)
+4.  [Fourth part](#fourth-part)
+
+---  
 
 ## First part  
 
@@ -517,7 +526,7 @@
 
 ---
 
-## Third Part  
+## Third part  
 
 * Add below code to *pom.xml*  
 
@@ -596,28 +605,19 @@
 
         *pom.xml* contain plugin's information, if we put the wrong version of the plugin Maven will not find the plugin then will throw an error.  
 
-* Explain each following section of the site :  
+* Explain each menu's link of the site.  
 
-  * Dependencies  
+  Each section are related with their name.   
 
-    This section contain all information of our project's dependencies, for now it only refer to *JUnit*.   
+* How to switch the report to french.
 
-  * About  
+  You need to add below tags into maven site plugin
+  ```xml
+  <configuration>
+    <locales>fr</locales>
+  </configuration>
+  ```  
 
+---  
 
-
-  * Continuous Integration      
-
-  * Issue tracking  
-
-  * Mailing list  
-
-  * Project Management    
-
-  * Project License  
-
-  * Project Summary    
-
-  * Project Team    
-
-  * Source Repository  
+## Fourth part
