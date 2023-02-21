@@ -25,6 +25,8 @@
       <item name="General Information" href="about.html"/>
       <item name="For Maven 1.x Users" href="maven1.html"/>
       <item name="Road Map" href="roadmap.html" />
+      <item name="Selim Linkedin" href="https://fr.linkedin.com/in/selim-haddioui"/>
+      <item name="Minh-Tri Linkedin" href="https://fr.linkedin.com/in/minh-tri-nguyen-75abb020b"/>
     </menu>
  
     <menu ref="reports"/>
