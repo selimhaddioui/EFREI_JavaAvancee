@@ -668,8 +668,17 @@
 
 * Analyze *target\site* content.    
 
-  It look the same way as before but when we look last edit date we see that they just have been updated. See [commit]()
+  It look the same way as before but when we look last edit date we see that they just have been updated. See [commit](https://github.com/selimhaddioui/EFREI_JavaAvancee/commit/2879d2e593a56071148ea94523b50a80c337daac).  
 
 * Open *index.html* and explain how *site.xml* is related to the html files.  
 
-*. Add a new section to left panel.  
+  Our *site.xml* describe exactly what the site contain, we can see that there is a menu called "Maven 2.0" that have the same name as describe in *site.xml* and that contain the same link listed in it.    
+
+* Add a new section to left panel.  
+
+  ```xml
+  <item name="Selim Linkedin" href="https://fr.linkedin.com/in/selim-haddioui"/>
+  <item name="Minh-Tri Linkedin" href="https://fr.linkedin.com/in/minh-tri-nguyen-75abb020b"/>
+  ```
+
+  See [commit](https://github.com/selimhaddioui/EFREI_JavaAvancee/commit/a69714d81d26fc4104ba4e435a3f4bab4956c132).  
