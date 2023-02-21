@@ -590,7 +590,7 @@
 
     * What happened ?  
 
-        `target\site` has been created and contain web files (html, css, images). `mvn site` created a site representing the documentation of our project.
+        `target\site` has been created and contain web files (html, css, images). `mvn site` created a site representing the documentation of our project. See [commit](https://github.com/selimhaddioui/EFREI_JavaAvancee/commit/ffc737a1b80ce526202591a3980a395f6813027e).  
 
     * How is it related to *pom.xml*  
 
