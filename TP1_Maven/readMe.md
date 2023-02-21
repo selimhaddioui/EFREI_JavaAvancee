@@ -63,7 +63,7 @@
 * Create a repository, launch **command prompt** from it and write below command.  
 
   ```sh  
-  mvn archetype:generate -B -DarchetypeArtifactId=maven-archetype-quickstart -DgroupId=fr.efrei.mavenapps -DartifactId=MyApp -Dversion=1.0-SNAPSHOT -DpackageName=fr.efrei.mavenapps
+  mvn archetype:generate -B "-DarchetypeArtifactId=maven-archetype-quickstart" "-DgroupId=fr.efrei.mavenapps" "-DartifactId=MyApp" "-Dversion=1.0-SNAPSHOT" "-DpackageName=fr.efrei.mavenapps"
   ```  
   Output :  
 
