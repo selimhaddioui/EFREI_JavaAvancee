@@ -620,4 +620,15 @@
 
 ---  
 
-## Fourth part
+## Fourth part  
+
+* Create *src\site\site.xml* then analyze site.xml content
+
+  If we just created it then *site.xml* should be empty, but it does make sense so we took *site.xml* template from maven documentation. This *site.xml* describe how our site is. See [site.xml](https://github.com/selimhaddioui/EFREI_JavaAvancee/commit/fb06933b283c3987492adb3fb101256ee7afe095#diff-9c59bd8d6e464486ca6f124760b6d67235cd96f5c5a0186317c65da34aeb54e3).  
+
+* Again, launch `mvn site`
+  3. Lancez mvn site à nouveau
+• Analysez le contenu de targetsite
+• Ouvrez le fichier index.html
+4. Expliquez le lien entre cette interface et le fichier site.xml
+5. Ajoutez une nouvelle section au menu de gauche
