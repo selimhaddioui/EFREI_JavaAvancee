@@ -596,4 +596,28 @@
 
         *pom.xml* contain plugin's information, if we put the wrong version of the plugin Maven will not find the plugin then will throw an error.  
 
-* ?
+* Explain each following section of the site :  
+
+  * Dependencies  
+
+    This section contain all information of our project's dependencies, for now it only refer to *JUnit*.   
+
+  * About  
+
+
+
+  * Continuous Integration      
+
+  * Issue tracking  
+
+  * Mailing list  
+
+  * Project Management    
+
+  * Project License  
+
+  * Project Summary    
+
+  * Project Team    
+
+  * Source Repository  
