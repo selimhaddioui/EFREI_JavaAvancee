@@ -516,3 +516,24 @@
   Maven started by cleaning the project then compiled it, ran test, package it and finally installed it in local repository. See [commit](https://github.com/selimhaddioui/EFREI_JavaAvancee/commit/7a64695e2d0e5702c80f14842099ae64809a46d3).
 
 ---
+
+## Third Part  
+
+* Add below code to *pom.xml*  
+
+  ``xml
+<plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-site-plugin</artifactId>
+  <version>3.0-beta-3</version>
+  <configuration>
+    <reportPlugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <version>2.0.1</version>
+      </plugin>
+    </reportPlugins>
+  </configuration>
+</plugin>
+  ``` 
