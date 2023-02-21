@@ -631,11 +631,44 @@
 
   Output :  
 
-  > Here is.  
+  > [INFO] Scanning for projects...  
+    [WARNING]  
+    [WARNING] Some problems were encountered while building the effective model for fr.efrei.mavenapps:MyApp:jar:1.0-SNAPSHOT  
+    [WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-site-plugin is missing. @ line 29, column 15  
+    [WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter. @ line 32, column 24  
+    [WARNING]   
+    [WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.  
+    [WARNING]  
+    [WARNING] For this reason, future Maven versions might no longer support building such malformed projects.  
+    [WARNING]  
+    [INFO]  
+    [INFO] ----------------------< fr.efrei.mavenapps:MyApp >----------------------  
+    [INFO] Building MyApp 1.0-SNAPSHOT  
+    [INFO] --------------------------------[ jar ]---------------------------------     
+    [INFO]   
+    [INFO] --- maven-site-plugin:3.3:site (default-site) @ MyApp ---     
+    [INFO] configuring report plugin org.apache.maven.plugins:maven-project-info-reports-plugin:2.0.1   
+    [INFO] Relativizing decoration links with respect to project URL: http://maven.apache.org   
+    [INFO] Rendering site with org.apache.maven.skins:maven-default-skin:jar:1.0 skin.   
+    [INFO] Generating "Continuous Integration" report    --- maven-project-info-reports-plugin:2.0.1   
+    [INFO] Generating "Dependencies" report    --- maven-project-info-reports-plugin:2.0.1   
+    [INFO] Generating "Issue Tracking" report    --- maven-project-info-reports-plugin:2.0.1   
+    [INFO] Generating "Project License" report    --- maven-project-info-reports-plugin:2.0.1   
+    [INFO] Generating "Mailing Lists" report    --- maven-project-info-reports-plugin:2.0.1   
+    [INFO] Generating "About" report    --- maven-project-info-reports-plugin:2.0.1   
+    [INFO] Generating "Project Summary" report    --- maven-project-info-reports-plugin:2.0.1   
+    [INFO] Generating "Source Repository" report    --- maven-project-info-reports-plugin:2.0.1   
+    [INFO] Generating "Project Team" report    --- maven-project-info-reports-plugin:2.0.1   
+    [INFO] ------------------------------------------------------------------------   
+    [INFO] BUILD SUCCESS     
+    [INFO] ------------------------------------------------------------------------   
+    [INFO] Total time:  2.653 s    
+    [INFO] Finished at: 2023-02-21T22:57:54+01:00   
+    [INFO] ------------------------------------------------------------------------     
 
 * Analyze *target\site* content.    
 
-  We can see this.  
+  It look the same way as before but when we look last edit date we see that they just have been updated. See [commit]()
 
 * Open *index.html* and explain how *site.xml* is related to the html files.  
 
