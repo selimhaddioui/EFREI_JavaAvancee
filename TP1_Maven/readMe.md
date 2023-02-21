@@ -252,7 +252,7 @@
     [INFO]  
     [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ MyApp ---  
     [WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!  
-    [INFO] skip non existing resourceDirectory C:\Users\selim\source\repos\Java   Avanc�\TP1_Maven\MyApp\src\main\resources  
+    [INFO] skip non existing resourceDirectory C:\Users\selim\source\repos\JavaAv\TP1_Maven\MyApp\src\main\resources  
     [INFO]  
     [INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ MyApp ---  
     [INFO] Nothing to compile - all classes are up to date  
