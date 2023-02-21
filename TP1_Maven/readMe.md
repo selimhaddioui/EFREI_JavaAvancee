@@ -547,7 +547,7 @@
 </plugin>  
 ```   
 
-* Write `mvn site`
+* Write `mvn site`.
 
   Maven is downloading the new plugin then throw an error that have more than 500 lines. For the well-being of this readme we wont put it there.
 
@@ -601,7 +601,7 @@
 
         `target\site` has been created and contain web files (html, css, images). `mvn site` created a site representing the documentation of our project. See [commit](https://github.com/selimhaddioui/EFREI_JavaAvancee/commit/ffc737a1b80ce526202591a3980a395f6813027e).  
 
-    * How is it related to *pom.xml*  
+    * How is it related to *pom.xml*.  
 
         *pom.xml* contain plugin's information, if we put the wrong version of the plugin Maven will not find the plugin then will throw an error.  
 
@@ -611,7 +611,8 @@
 
 * How to switch the report to french.
 
-  You need to add below tags into maven site plugin
+  You need to add below tags into maven site plugin :  
+
   ```xml
   <configuration>
     <locales>fr</locales>
@@ -622,13 +623,20 @@
 
 ## Fourth part  
 
-* Create *src\site\site.xml* then analyze site.xml content
+* Create *src\site\site.xml* then analyze site.xml content.
 
   If we just created it then *site.xml* should be empty, but it does make sense so we took *site.xml* template from maven documentation. This *site.xml* describe how our site is. See [site.xml](https://github.com/selimhaddioui/EFREI_JavaAvancee/commit/fb06933b283c3987492adb3fb101256ee7afe095#diff-9c59bd8d6e464486ca6f124760b6d67235cd96f5c5a0186317c65da34aeb54e3).  
 
-* Again, launch `mvn site`
-  3. Lancez mvn site à nouveau
-• Analysez le contenu de targetsite
-• Ouvrez le fichier index.html
-4. Expliquez le lien entre cette interface et le fichier site.xml
-5. Ajoutez une nouvelle section au menu de gauche
+* Again, launch `mvn site`.  
+
+  Output :  
+
+  > Here is.  
+
+* Analyze *target\site* content.    
+
+  We can see this.  
+
+* Open *index.html* and explain how *site.xml* is related to the html files.  
+
+*. Add a new section to left panel.  
