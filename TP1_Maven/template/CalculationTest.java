@@ -1,3 +1,5 @@
+package fr.efrei.mavenapps;
+
 import junit.framework.TestCase;
 
 public class CalculationTest extends TestCase {
