@@ -5,6 +5,6 @@
 
 ---  
 
-[Preview](./2-branche.md)
+[Preview](./2-branch.md)
 
 [Next](./4-ide.md)  
