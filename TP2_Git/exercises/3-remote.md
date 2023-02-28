@@ -51,7 +51,7 @@
     > commit 2da7fccddb28ad878cc96f1267449499d4dd5ab2 (HEAD -> master)  
       Author: NGUYEN <minh-tri.nguyen@efrei.net>  
       Date:   Tue Feb 28 15:18:38 2023 +0100  
-        first commit  
+      first commit  
 
 
 3.
@@ -70,14 +70,15 @@
     Output :
     > commit 2da7fccddb28ad878cc96f1267449499d4dd5ab2 (HEAD -> master, origin/master, origin/HEAD)
       Author: NGUYEN <minh-tri.nguyen@efrei.net>
-      Date:   Tue Feb 28 15:18:38 2023 +0100
-          first commit
+      Date:   Tue Feb 28 15:18:38 2023 +0100  
+      first commit
 
 
 4.
   * From *repo2* repository print *file.txt* content.  
 
-    `cat file.txt`  
+    `cat file.txt`.  
+
     Output :  
     > ligne01
 
@@ -91,24 +92,24 @@
     ```
 
     Output :
-    > commit 4b91077e460d5368787e60015928dcfb64fcb0ce (HEAD -> master)
-      Author: HADDIOUI <selim.haddioui@hotmail.com>
-      Date:   Tue Feb 28 15:26:57 2023 +0100
-          adding ligne02
-      commit 2da7fccddb28ad878cc96f1267449499d4dd5ab2 (origin/master, origin/HEAD)
-      Author: NGUYEN <minh-tri.nguyen@efrei.net>
-      Date:   Tue Feb 28 15:18:38 2023 +0100
-          first commit
+    > commit 4b91077e460d5368787e60015928dcfb64fcb0ce (HEAD -> master)  
+      Author: HADDIOUI <selim.haddioui@hotmail.com>  
+      Date:   Tue Feb 28 15:26:57 2023 +0100  
+      adding ligne02  
+      commit 2da7fccddb28ad878cc96f1267449499d4dd5ab2 (origin/master, origin/HEAD)  
+      Author: NGUYEN <minh-tri.nguyen@efrei.net>  
+      Date:   Tue Feb 28 15:18:38 2023 +0100  
+      first commit  
 
     We can see that the last commit has been done by HADDIOUI instead of NGUYEN for the previous one.
 
 5.  
-  * Push your commit into *3-remote*
+  * Push your commit into *3-remote*  
 
-  `git push`.
+      `git push`.
 
 6.  
-  * Go back into *3-remote* and print log.
+  * Go back into *3-remote* and print log.  
 
     ```sh
     cd ../3-remote
@@ -116,14 +117,14 @@
     ```
 
     Output :
-    > commit 4b91077e460d5368787e60015928dcfb64fcb0ce (HEAD -> master)
-      Author: HADDIOUI <selim.haddioui@hotmail.com>
-      Date:   Tue Feb 28 15:26:57 2023 +0100
-          adding ligne02
-      commit 2da7fccddb28ad878cc96f1267449499d4dd5ab2
-      Author: NGUYEN <minh-tri.nguyen@efrei.net>
-      Date:   Tue Feb 28 15:18:38 2023 +0100
-          first commit
+    > commit 4b91077e460d5368787e60015928dcfb64fcb0ce (HEAD -> master)  
+      Author: HADDIOUI <selim.haddioui@hotmail.com>  
+      Date:   Tue Feb 28 15:26:57 2023 +0100  
+      adding ligne02  
+      commit 2da7fccddb28ad878cc96f1267449499d4dd5ab2  
+      Author: NGUYEN <minh-tri.nguyen@efrei.net>  
+      Date:   Tue Feb 28 15:18:38 2023 +0100  
+      first commit  
 
     We can see that commit are there but  *file.txt* isn't in *3-remote* repository. This is because, when we clone 3-remote we asked it to be a shared central repository that doesn't contain any working files such as *file.txt* in this case.  
 
@@ -148,7 +149,7 @@
     ```
 
     Output :
-    > * master
+    > * master  
       remotes/distant/master
 
     ```sh
@@ -157,8 +158,8 @@
     ```
 
     Output :
-    > ligne01
-      ligne02
+    > ligne01  
+      ligne02  
 
 9. (and 10.)
   * Get back on master branch, check file content, merge new branch with main and check again file content.
@@ -177,8 +178,8 @@
   ```
 
   Output :
-  > ligne01
-    ligne02
+  > ligne01  
+    ligne02  
 
 11.
   * Add a new line then push on distant.

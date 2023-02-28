@@ -82,7 +82,8 @@
   `cat file.txt`.      
   Output:  
 
-  > Here is the output.
+  > ligne01  
+    ligne02  
 
 * How to rollback 3 commit before ?  
 

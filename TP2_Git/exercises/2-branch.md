@@ -69,7 +69,7 @@
     ```sh
     echo "ligne04" >> lignes.txt
     git add lignes.txt
-      git commit -m "ajout ligne04".
+    git commit -m "ajout ligne04".
     ```
 
 * Go back on correction branch, fix "ligne02" on *lignes.txt* and commit.
@@ -95,9 +95,9 @@
 
   Output :
 
-  > igne01  
-    igne02  
-    ligne03  
+  > igne01    
+    igne02    
+    ligne03    
 
 * Merge correction into main.
 
@@ -109,10 +109,10 @@
 
   Output :
 
-  > igne01
-    igne02
-    ligne03
-    ligne04
+  > igne01  
+    igne02  
+    ligne03  
+    ligne04  
 
 * Print using graphics evolutions in an graphic interface
 
