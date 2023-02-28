@@ -5,11 +5,11 @@
 
     `mkdir project`.  
 
-* Initialiaze, in the current repository, a git depot.  
+* Initialiaze, in the current repository, a git repository.  
 
     `git init`.  
 
-* Configure your depot with your name and email.  
+* Configure your repository with your name and email.  
 
     ```sh
     git config --global user.name "NGUYEN"
@@ -24,7 +24,7 @@
   git add file.txt
   ```
 
-* In which state are depot's file ?  
+* In which state are repository's file ?  
 
   *file.txt* is staged.  
 
