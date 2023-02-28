@@ -15,15 +15,12 @@
 
 ### Useful posix command
 
-  `touch`
-
-— touch file.txt pour créer un fichier,
-— echo ”ligne” » file.txt pour écrire une nouvelle ligne en fin de fichier,
-— mkdir rep pour créer un répertoire,
-— cd rep pour changer de répertoire,
-— pwd pour afficher le chemin courant,
-— ls -al pour consulter le contenu d’un répertoire,
-— cat pour afficher le contenu d’un fichier.
-
-
+  * `touch file.txt` create *file.txt*.  
+  * `echo "ligne" > file.txt` write "ligne" in *file.txt*.  
+  * `mkdir repo` create *repo* repository.  
+  * `cd repo` switch current location to *repo*.  
+  * `pwd` print current location path.  
+  * `ls -al` print repository content.  
+  * `cat file.txt` print *file.txt* content.
+  
 ---  
