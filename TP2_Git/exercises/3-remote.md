@@ -1,5 +1,5 @@
 
-# Elementary Git command
+# Remote
 
 * Question
 

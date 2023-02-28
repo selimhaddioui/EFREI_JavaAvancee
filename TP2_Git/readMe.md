@@ -7,7 +7,7 @@
 
 ### Exercise  
 
-  1.  [Elementary command](./exercises/1-base.md)  
+  1.  [Base](./exercises/1-base.md)  
   2.  [Branch](./exercises/2-branch.md)  
   3.  [Remote](./exercises/3-remote.md)  
   4.  [IDE](./exercises/4-ide.md)

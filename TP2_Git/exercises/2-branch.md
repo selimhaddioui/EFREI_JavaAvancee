@@ -1,5 +1,5 @@
 
-# Elementary Git command
+# Branch
 
 * Create a repository, configure it with your name and mail.
 

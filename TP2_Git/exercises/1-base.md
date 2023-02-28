@@ -1,5 +1,5 @@
 
-# Elementary Git command
+# Base
 
 * Create a *project* repository.  
 
