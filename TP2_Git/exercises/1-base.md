@@ -58,7 +58,7 @@
 
 * What does that mean ?  
 
-  Output :   
+  Output :
   >  warning: in the working copy of 'file.txt', LF will be replaced by CRLF the next time Git touches it  
     diff --git a/file.txt b/file.txt  
     index 2b7ab18..38bda22 100644  
@@ -79,7 +79,7 @@
 
 * What is inside *file.txt* ?  
 
-  `cat file.txt`.      
+  `cat file.txt`.
   Output:  
 
   > ligne01  
@@ -106,6 +106,8 @@
 
   `git gui`.  
 
----   
+---
+
+[Preview](../readMe.md)
 
 [Next](./2-branch.md)  

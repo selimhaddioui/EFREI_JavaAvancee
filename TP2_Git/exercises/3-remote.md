@@ -2,7 +2,8 @@
 # Remote
 
 1.
-  * Create a repository *repo1*, go in it and init a git repository. Also config a user.name and email locally.
+
+* Create a repository *repo1*, go in it and init a git repository. Also config a user.name and email locally.
 
     ```sh
     mkdir 3-repo1
@@ -12,7 +13,7 @@
     git config --local user.email minh-tri.nguyen@efrei.net
     ```
 
-  * Create a *file.txt* with "ligne01" in it and commit it with a comment saying "first commit".
+* Create a *file.txt* with "ligne01" in it and commit it with a comment saying "first commit".
 
     ```sh
     touch file.txt
@@ -21,17 +22,18 @@
     git commit -m "first commit".
     ```
 
-  * Print log
+* Print log
 
     `git log`
 
     Output :
     > commit 2da7fccddb28ad878cc96f1267449499d4dd5ab2 (HEAD -> master)  
       Author: NGUYEN <minh-tri.nguyen@efrei.net>  
-      Date:   Tue Feb 28 15:18:38 2023 +0100    
+      Date:   Tue Feb 28 15:18:38 2023 +0100
 
 2.
-  * Go in parent repository, create a repository called *remote*, go in it and init a git repository using following command `git clone --bare 3-repo1 3-remote`.  
+
+* Go in parent repository, create a repository called *remote*, go in it and init a git repository using following command `git clone --bare 3-repo1 3-remote`.  
 
     ```sh
     cd ../
@@ -40,11 +42,11 @@
     cd 3-remote
     ```
 
-  * What --bare is for ?
+* What --bare is for ?
 
     When using `clone --bare repo1 repo2` you can create a repository that will only store file repository without working files. It is often used for shared central repository because they are lighter than common repository.
 
-  * Print log from this repository.  
+* Print log from this repository.  
 
     `git log`.
     Output :
@@ -53,9 +55,9 @@
       Date:   Tue Feb 28 15:18:38 2023 +0100  
       first commit  
 
-
 3.
-  * Go in parent repository, create a repository repo2 from remote and go in it. Configure it with an other name and email and print log.
+
+* Go in parent repository, create a repository repo2 from remote and go in it. Configure it with an other name and email and print log.
 
     ```sh
     cd ../
@@ -73,16 +75,16 @@
       Date:   Tue Feb 28 15:18:38 2023 +0100  
       first commit
 
-
 4.
-  * From *repo2* repository print *file.txt* content.  
+
+* From *repo2* repository print *file.txt* content.  
 
     `cat file.txt`.  
 
     Output :  
     > ligne01
 
-  * Add "ligne02" to *file.txt*, commit and print log.
+* Add "ligne02" to *file.txt*, commit and print log.
 
     ```sh
     echo "ligne02" >> file.txt
@@ -104,12 +106,14 @@
     We can see that the last commit has been done by HADDIOUI instead of NGUYEN for the previous one.
 
 5.  
-  * Push your commit into *3-remote*  
+
+* Push your commit into *3-remote*  
 
       `git push`.
 
 6.  
-  * Go back into *3-remote* and print log.  
+
+* Go back into *3-remote* and print log.  
 
     ```sh
     cd ../3-remote
@@ -129,7 +133,8 @@
     We can see that commit are there but  *file.txt* isn't in *3-remote* repository. This is because, when we clone 3-remote we asked it to be a shared central repository that doesn't contain any working files such as *file.txt* in this case.  
 
 7.
-  * Go in *3-repo1* repository, add *3-remote* as "distant" remote and check that it did work.
+
+* Go in *3-repo1* repository, add *3-remote* as "distant" remote and check that it did work.
 
     ```sh
     cd ../3-repo1
@@ -141,7 +146,8 @@
     > distant
 
 8.
-  * Fetch distant remote, print all branches available, get on new branches, and check files content.
+
+* Fetch distant remote, print all branches available, get on new branches, and check files content.
 
     ```sh
     git fetch distant
@@ -149,6 +155,7 @@
     ```
 
     Output :
+    >
     > * master  
       remotes/distant/master
 
@@ -162,7 +169,8 @@
       ligne02  
 
 9. (and 10.)
-  * Get back on master branch, check file content, merge new branch with main and check again file content.
+
+* Get back on master branch, check file content, merge new branch with main and check again file content.
 
   ```sh
   git checkout master
@@ -182,7 +190,8 @@
     ligne02  
 
 11.
-  * Add a new line then push on distant.
+
+* Add a new line then push on distant.
 
     ```sh
     echo "ligne03" >> file.txt
@@ -192,7 +201,8 @@
     ```
 
 12.
-  * Go on *3-repo2*, fetch from *3-remote* using git pull and check file content.
+
+* Go on *3-repo2*, fetch from *3-remote* using git pull and check file content.
 
     ```sh
     cd ../3-repo2
@@ -205,7 +215,7 @@
       ligne02  
       ligne03  
 
-  * Add "ligne04", commit and push on remote.  
+* Add "ligne04", commit and push on remote.  
 
     ```sh
     echo "ligne04" >> file.txt
@@ -215,7 +225,8 @@
     ```
 
 13.
-  * Back on *3-repo1*, pull these modifications.
+
+* Back on *3-repo1*, pull these modifications.
 
   ```sh
   cd ../3-repo1

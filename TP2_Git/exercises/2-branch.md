@@ -95,9 +95,9 @@
 
   Output :
 
-  > igne01    
-    igne02    
-    ligne03    
+  > igne01
+    igne02
+    ligne03
 
 * Merge correction into main.
 
@@ -105,7 +105,7 @@
 
 * Print *lignes.txt* after edit.
 
-  `cat lignes.txt`.   
+  `cat lignes.txt`.
 
   Output :
 
