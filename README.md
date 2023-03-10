@@ -14,7 +14,7 @@ Academic practical work from *advanced java* module at **EFREI Paris**.
 
   1. [Maven](./TP1_Maven/readMe.md)  
   2. [Git](./TP2_Git/readMe.md)  
-  3. [JDCB]  
+  3. [JDBC](./TP3_JDBC/readMe.md)  
   4. [JUnit]
 
 ---
