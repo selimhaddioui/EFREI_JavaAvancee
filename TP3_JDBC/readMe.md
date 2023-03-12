@@ -5,11 +5,11 @@
 ## Pre-requirement  
 
 This repository will not speak about how to start a database instance but you will need to do it so you might want to see [how docker handle it](https://dev.mysql.com/doc/mysql-installation-excerpt/8.0/en/docker-mysql-getting-started.html#docker-starting-mysql-server).
-Docker make it easier so you also might want to [install it](https://www.docker.com/)
+Docker make it easier so you also might want to [install it](https://www.docker.com/).
 
 ## Configuration
 
-In our example we are going to use a MySql database and all configurations can be see [there](./JDBC_MYSQL/src/main/java/DatabaseManager.java) into static attributs.
+In our example we are going to use a MySql database and all configurations can be see [there](https://github.com/selimhaddioui/EFREI_JavaAvancee/blob/JDBC/TP3_JDBC/JDBC_MYSQL/src/main/java/DatabaseManager.java#L9) into static attributs.
 
 ### Exercise  
 
